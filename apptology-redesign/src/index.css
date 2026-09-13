@@ -1,0 +1,29 @@
+﻿html {
+  background: #f6f8fc;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fc;
+  color: #111827;
+}
+
+a,
+button {
+  transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  margin-top: 0;
+}
+
