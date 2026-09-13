@@ -5,7 +5,7 @@ const portfolioItems = [
   {
     id: 'docreferral',
     title: 'DocReferral Healthcare Platform',
-    icon: '🩺',
+    iconUrl: 'https://apptology.com/images/dignity_health_icon.png',
     category: 'Healthcare',
     platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
@@ -16,7 +16,7 @@ const portfolioItems = [
   {
     id: 'environmental-impact-calculator',
     title: 'JT Environmental Impact Calculator',
-    icon: '🌱',
+    iconUrl: 'https://apptology.com/images/portfolio/environmental-logo.png',
     category: 'Education & Utility',
     platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
@@ -27,7 +27,7 @@ const portfolioItems = [
   {
     id: 'wing-zone',
     title: 'Wing Zone Restaurant App',
-    icon: '🍗',
+    iconUrl: 'https://apptology.com/images/portfolio/WingZone_icon.png',
     category: 'Food & Dining',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
@@ -38,7 +38,7 @@ const portfolioItems = [
   {
     id: 'palm-springs',
     title: 'Palm Springs Mid-Century Modern Guide',
-    icon: '🌴',
+    iconUrl: 'https://apptology.com/images/portfolio/logo-palm-springs.png',
     category: 'Travel & Lifestyle',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
@@ -49,7 +49,7 @@ const portfolioItems = [
   {
     id: 'jama-network-challenge',
     title: 'The JAMA Network Challenge',
-    icon: '🏥',
+    iconUrl: 'https://apptology.com/images/jama_appicon.png',
     category: 'Healthcare',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80',
@@ -60,7 +60,7 @@ const portfolioItems = [
   {
     id: 'dream-moods',
     title: 'Dream Moods Dictionary & Journal',
-    icon: '🌙',
+    iconUrl: 'https://apptology.com/images/dream-moods-logo.png',
     category: 'Lifestyle & Entertainment',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=900&q=80',
@@ -71,7 +71,7 @@ const portfolioItems = [
   {
     id: 'hp-enterprise-printers',
     title: 'HP Enterprise Printers Sales Tool',
-    icon: '🖨️',
+    iconUrl: 'https://apptology.com/images/portfolio/hp-icon.png',
     category: 'Enterprise & Business',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80',
@@ -82,7 +82,7 @@ const portfolioItems = [
   {
     id: 'vsos-emergency-response-app',
     title: 'VSOS Panic & Emergency Response System',
-    icon: '🚨',
+    iconUrl: 'https://apptology.com/images/portfolio/vSOS-anroid.png',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=900&q=80',
@@ -93,7 +93,7 @@ const portfolioItems = [
   {
     id: 'swint-real-estate',
     title: 'Swint Real Estate Mobile App',
-    icon: '🏡',
+    iconUrl: 'https://apptology.com/images/swint-icon.png',
     category: 'Real Estate',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80',
@@ -104,7 +104,7 @@ const portfolioItems = [
   {
     id: 'ibleed',
     title: 'iBleed Hemophilia Healthcare Tracker',
-    icon: '🩸',
+    iconUrl: 'https://apptology.com/images/portfolio/ibleed-icon.png',
     category: 'Healthcare',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80',
@@ -115,7 +115,7 @@ const portfolioItems = [
   {
     id: 'sienna-restaurant',
     title: 'Sienna Restaurant Dining App',
-    icon: '🍷',
+    iconUrl: 'https://apptology.com/images/sarta-blackbery-logo.png',
     category: 'Food & Dining',
     platform: 'iOS Mobile',
     image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=80',
@@ -126,7 +126,7 @@ const portfolioItems = [
   {
     id: 'squarecoins',
     title: 'Square Coins Rewards & Loyalty',
-    icon: '🪙',
+    iconUrl: 'https://apptology.com/images/portfolio/SquareCoins-icon.png',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=900&q=80',
@@ -137,7 +137,7 @@ const portfolioItems = [
   {
     id: 'cms-asia-connect',
     title: 'CMS Asia Connect Conference App',
-    icon: '🤝',
+    iconUrl: 'https://apptology.com/images/cms_appicon.png',
     category: 'Enterprise & Business',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=900&q=80',
@@ -148,7 +148,7 @@ const portfolioItems = [
   {
     id: 'metro-edge',
     title: 'Metro EDGE Young Professionals Network',
-    icon: '👔',
+    iconUrl: 'https://apptology.com/images/MetroEDGE_appicon.png',
     category: 'Community & Local',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
@@ -159,7 +159,7 @@ const portfolioItems = [
   {
     id: 'ez-abc-keyboard',
     title: 'EZ ABC Keyboard for Toddlers',
-    icon: '🔤',
+    iconUrl: 'https://apptology.com/images/ez-one-hand-keyboard-icon.jpg',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80',
@@ -170,7 +170,7 @@ const portfolioItems = [
   {
     id: 'emergycare',
     title: 'EmergyCare Emergency Transport App',
-    icon: '🚑',
+    iconUrl: 'https://apptology.com/images/emergycare-small-android.png',
     category: 'Healthcare',
     platform: 'Android & iOS',
     image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80',
@@ -181,7 +181,7 @@ const portfolioItems = [
   {
     id: 'betsizer',
     title: 'Betsizer Sports Analytics Calculator',
-    icon: '📊',
+    iconUrl: 'https://apptology.com/images/Betsizer-anroid.png',
     category: 'Education & Utility',
     platform: 'Android',
     image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80',
@@ -192,7 +192,7 @@ const portfolioItems = [
   {
     id: 'nicholas-gunn',
     title: 'Nicholas Gunn Music Streaming App',
-    icon: '🎵',
+    iconUrl: 'https://apptology.com/images/portfolio/ng-icon-blackberry.png',
     category: 'Lifestyle & Entertainment',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80',
@@ -203,7 +203,7 @@ const portfolioItems = [
   {
     id: 'sac-guitar-society',
     title: 'Sacramento Guitar Society',
-    icon: '🎸',
+    iconUrl: 'https://apptology.com/images/sacramento-guitar_blackberry.png',
     category: 'Community & Local',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80',
@@ -214,7 +214,7 @@ const portfolioItems = [
   {
     id: 'cascade-pest-control',
     title: 'Cascade Pest Control Inspection App',
-    icon: '🪲',
+    iconUrl: 'https://apptology.com/images/Cascade-logo.png',
     category: 'Enterprise & Business',
     platform: 'iPad & iOS',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80',
@@ -225,7 +225,7 @@ const portfolioItems = [
   {
     id: 'leadership-sacramento',
     title: 'Leadership Sacramento Civic Portal',
-    icon: '🏛️',
+    iconUrl: 'https://apptology.com/images/Leadership_appicon.png',
     category: 'Community & Local',
     platform: 'iPad & Mobile',
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80',
@@ -236,7 +236,7 @@ const portfolioItems = [
   {
     id: 'lake-fork-fishing',
     title: 'Lake Fork Bass Fishing Guide',
-    icon: '🎣',
+    iconUrl: 'https://apptology.com/images/lake_icon.png',
     category: 'Travel & Lifestyle',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80',
@@ -606,7 +606,7 @@ function App() {
                       <div className="work-copy">
                         <span>{item.category}</span>
                         <div className="work-title-row">
-                          <span className="app-card-icon">{item.icon}</span>
+                          <img src={item.iconUrl} alt={item.title} className="app-card-icon-img" onError={(e) => { e.target.style.display = "none"; }} />
                           <h3 style={{ margin: 0 }}>{item.title}</h3>
                         </div>
                         <p>{item.description}</p>
@@ -869,7 +869,7 @@ function App() {
                       <div className="work-copy">
                         <span>{item.category}</span>
                         <div className="work-title-row">
-                          <span className="app-card-icon">{item.icon}</span>
+                          <img src={item.iconUrl} alt={item.title} className="app-card-icon-img" onError={(e) => { e.target.style.display = "none"; }} />
                           <h3 style={{ margin: 0 }}>{item.title}</h3>
                         </div>
                         <p>{item.description}</p>

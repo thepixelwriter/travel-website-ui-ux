@@ -1204,3 +1204,16 @@ section {
   text-transform: none !important;
   letter-spacing: 0 !important;
 }
+
+
+.app-card-icon-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid rgba(57, 181, 74, 0.3);
+  box-shadow: 0 4px 10px rgba(57, 181, 74, 0.12);
+  flex-shrink: 0;
+}
