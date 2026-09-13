@@ -398,45 +398,6 @@ const readyAppsList = [
   },
 ]
 
-const blogArticles = [
-  {
-    id: 1,
-    title: 'The 7 Mobile App Monetization Models',
-    category: 'App Monetization',
-    summary: 'Explore the 7 proven strategies to generate revenue from your mobile app, from in-app purchases and subscriptions to sponsorship and ad models.',
-  },
-  {
-    id: 2,
-    title: 'How Much Does It Cost to Make an App?',
-    category: 'Product Strategy',
-    summary: 'A complete breakdown of mobile app development costs, feature scope, agency vs freelancer rates, and how to budget for launch.',
-  },
-  {
-    id: 3,
-    title: '9 Factors for Hiring the Perfect Mobile App Developer',
-    category: 'Agency Guide',
-    summary: 'Key criteria to evaluate when selecting a mobile app development partner, including portfolio verification, QA processes, and code ownership.',
-  },
-  {
-    id: 4,
-    title: '3 Steps to Turn Your Mobile App Idea into Reality',
-    category: 'Product Strategy',
-    summary: 'From napkin sketch to App Store release: how to validate user demand, build wireframes, and create a Minimum Viable Product (MVP).',
-  },
-  {
-    id: 5,
-    title: 'Top 6 Mobile Ad Revenue Models',
-    category: 'App Monetization',
-    summary: 'How native ads, rewarded video ads, banner ads, and interstitial placements compare for maximum user retention and yield.',
-  },
-  {
-    id: 6,
-    title: 'Raising Capital Through an ICO (Initial Coin Offering)',
-    category: 'Insights',
-    summary: 'An overview of tokenized fundraising models for tech startups and emerging decentralized mobile product ecosystems.',
-  },
-]
-
 const newsItems = [
   { date: '06 Nov 2017', title: "Apptology Makes Business of Apps' Best Mobile App Development Companies 2017 List", category: 'Recognition', href: 'http://www.businessofapps.com/guide/app-development-companies/#1' },
   { date: '12 Sep 2017', title: 'Apptology sponsors the Startup Grind Sacramento event featuring Luxer One Founder Arik Levy.', category: 'Community', href: 'https://www.startupgrind.com/events/details/startup-grind-sacramento-presents-arik-levy-luxer-one#/' },
@@ -456,18 +417,83 @@ const leadershipTeam = [
   { name: 'Ankur Bhatnagar', role: 'Director, Canadian Operations', bio: 'Ankur leads Canadian operations and brings more than 15 years of information technology and strategic management consulting experience across healthcare, finance, telecommunications, and public-sector programs.' },
 ]
 
-const featuredBlogPost = {
-  title: 'Google Algorithm Change Favors Mobile Friendly Sites',
-  date: 'April 19, 2015',
-  author: 'Rich Foreman',
-  category: 'Using Mobile Technology to Promote Your Business',
-  intro: 'Google announced that mobile friendliness would become a factor in search rankings. For businesses that depend on being found through search, the change made mobile experience a business priority rather than a nice-to-have.',
-  sections: [
-    { heading: 'What makes a site mobile friendly?', body: 'Mobile-friendly pages avoid software that is not commonly supported on phones, use text that can be read without zooming, adapt to the device without horizontal scrolling, and keep links far enough apart to tap accurately.' },
-    { heading: 'Responsive design is the lasting fix', body: 'A separate mobile site can be a quick patch, but responsive design gives people a consistent experience across desktop, tablet, and smartphone screens. The layout adapts to the device instead of asking visitors to work around it.' },
-    { heading: 'Why the experience matters', body: 'Mobile usage continues to shape how people discover and return to businesses. A clear, fast, mobile-friendly experience helps protect search visibility while making it easier for visitors to take the next step.' },
-  ],
-}
+const blogPosts = [
+  {
+    id: 'winning-business-first-time-founder',
+    title: 'Startup Grind: How to Design a Winning Business as a First-Time Founder',
+    date: 'May 31, 2022',
+    author: 'Rich Foreman',
+    category: 'Startup & Strategy',
+    sourceUrl: 'https://blog.apptology.com/startup-grind-how-to-design-a-winning-business-as-a-first-time-founder/',
+    excerpt: 'A practical Startup Grind Sacramento workshop about testing business-model assumptions, finding weak points, and turning uncertainty into experiments.',
+    intro: 'Strong companies begin with strong business models. This Startup Grind Sacramento workshop brought together first-time founders and Josh David Miller, the “shredder of business models,” for a practical conversation about designing a business that can earn customers, capital, and momentum.',
+    sections: [
+      { heading: 'Why business-model design matters', body: 'Early-stage companies often move quickly toward a product before they have made the underlying business model clear. That ambiguity can make fundraising harder, slow customer acquisition, and hide the assumptions that will eventually limit growth.' },
+      { heading: 'From assumptions to experiments', body: 'The workshop focused on using design thinking to identify the weakest part of a business model, turn it into a focused question, and create an experiment that produces useful evidence. The goal is not to pretend uncertainty is gone; it is to make uncertainty measurable.' },
+      { heading: 'What founders can take away', body: 'Participants were encouraged to clarify what their business model is technically, explain it simply, recognize the weaknesses an investor or customer will notice, and use experiments to turn unknowns into data. That process is useful for a solo founder with an idea as well as a team with an early product and revenue.' },
+      { heading: 'Workshop details', body: 'The original event was scheduled for June 21, 2020, at 5:00 PM PDT and hosted online. The session was intended for founders who had not yet reached product-market fit and wanted a clearer path from hypothesis to action.' },
+    ],
+  },
+  {
+    id: 'ios-developers-apple-may-owe-money',
+    title: 'U.S. iOS Developers: Apple May Owe You Money',
+    date: 'May 16, 2022',
+    author: 'Rich Foreman',
+    category: 'Mobile Industry',
+    sourceUrl: 'https://blog.apptology.com/u-s-ios-developers-apple-may-own-you-money/',
+    excerpt: 'Rich Foreman explains the Apple developer settlement, eligibility requirements, and why free apps were not included in the claim.',
+    intro: 'A postcard from Apple prompted Rich Foreman to investigate a settlement for eligible U.S. iOS developers. The original post explains what the claim process covered and why Apptology’s free apps did not qualify.',
+    sections: [
+      { heading: 'The settlement in brief', body: 'The Cameron et al. v. Apple Inc. settlement concerned allegations about Apple’s iOS app and in-app product distribution market. Apple denied the allegations, and the settlement was not an admission of wrongdoing.' },
+      { heading: 'Who could qualify?', body: 'The post described eligibility for U.S. developers who sold at least one non-zero-priced iOS app or in-app product through the U.S. App Store between 2015 and 2021, subject to the settlement’s revenue limits.' },
+      { heading: 'A lesson for app publishers', body: 'The experience is a useful reminder to keep developer-account records, understand platform policies, and read settlement requirements carefully. In Rich’s case, Apptology’s published apps were free, so the company did not qualify.' },
+    ],
+  },
+  {
+    id: 'crazy-world-of-nfts',
+    title: 'Startup Grind Sacramento Workshop: The Crazy World of NFTs',
+    date: 'April 26, 2022',
+    author: 'Rich Foreman',
+    category: 'Emerging Technology',
+    sourceUrl: 'https://blog.apptology.com/startup-grind-sacramento-workshop-the-crazy-world-of-nfts-what-is-it-and-why-does-it-matter/',
+    excerpt: 'An event preview featuring creator, marketer, engineer, and investor Kevin Su on NFTs, Web3 audiences, and creator monetization.',
+    intro: 'Startup Grind Sacramento invited Kevin Su of Nifty Nanners to discuss why NFTs had become such a visible part of the Web3 conversation and what the technology could mean for creators.',
+    sections: [
+      { heading: 'A creator-first view of Web3', body: 'The original post presented NFTs through the lens of audience development, digital ownership, and creator economics. It asked how artists and creators might build engaged communities while developing new ways to monetize their work.' },
+      { heading: 'About Kevin Su', body: 'Kevin Su was introduced as a content creator, marketer, engineer, and cryptocurrency investor who began collecting and studying the space early. His Nifty Nanners brand had built a substantial audience through education and entertainment.' },
+      { heading: 'Event details', body: 'The online workshop was scheduled for Wednesday, May 18 at 5:00 PM and was free to attend through Startup Grind Sacramento.' },
+    ],
+  },
+  {
+    id: 'avoiding-startup-legal-mistakes',
+    title: 'Avoiding Startup Legal Mistakes',
+    date: 'March 24, 2022',
+    author: 'Rich Foreman',
+    category: 'Founder Resources',
+    sourceUrl: 'https://blog.apptology.com/avoiding-startup-legal-mistakes-recording/',
+    excerpt: 'A recording guide for a Startup Grind workshop with DLA Piper partner David Richardson on the legal mistakes startups commonly make.',
+    intro: 'Startups often focus on product and growth while postponing legal decisions. This short archive entry points founders to a Startup Grind workshop designed to make those decisions more visible and manageable.',
+    sections: [
+      { heading: 'The workshop focus', body: 'DLA Piper partner David Richardson reviewed ten mistakes startups routinely make and discussed how founders can navigate them before they become expensive obstacles.' },
+      { heading: 'Why early guidance helps', body: 'Clear agreements, thoughtful company formation, intellectual-property planning, and disciplined records can give a young company a stronger foundation. Legal advice is most useful when it arrives before a crisis.' },
+    ],
+  },
+  {
+    id: 'sonny-mayugba-waitr',
+    title: 'Startup Grind Sacramento Hosts Waitr Founding CMO Sonny Mayugba',
+    date: 'September 18, 2019',
+    author: 'Rich Foreman',
+    category: 'Community & Leadership',
+    sourceUrl: 'https://blog.apptology.com/startup-grind-sacramento-and-the-urban-hive-hosts-waitr-founding-cmo-sonny-mayugba/',
+    excerpt: 'A Sacramento startup-community event featuring Sonny Mayugba and lessons from Waitr’s growth from local ordering service to public company.',
+    intro: 'Startup Grind Sacramento and the Urban Hive hosted Sonny Mayugba, the founding Chief Marketing Officer of Waitr Holdings. The event connected Sacramento founders with a leader who had helped position a fast-growing on-demand restaurant company for a national stage.',
+    sections: [
+      { heading: 'A conversation about growth', body: 'Sonny’s experience offered a useful case study in positioning, marketing, and building a company that can move from a local service to a national brand. Waitr became a public company in late 2018.' },
+      { heading: 'The Startup Grind format', body: 'The event reflected Startup Grind Sacramento’s mission to educate, connect, and inspire entrepreneurs through conversations, networking, food, and live music.' },
+      { heading: 'Event details', body: 'The event was scheduled for October 15, 2019, from 6:30 PM to 8:30 PM at The Urban Hive at The Cannery in Sacramento.' },
+    ],
+  },
+]
 
 const featuredCaseStudies = [
   {
@@ -526,6 +552,7 @@ function App() {
   const [contactSubmitted, setContactSubmitted] = useState(false)
   const [activeSlide, setActiveSlide] = useState(0)
   const [isCarouselPaused, setIsCarouselPaused] = useState(false)
+  const [selectedBlogPost, setSelectedBlogPost] = useState(blogPosts[0])
 
   useEffect(() => {
     if (currentPage !== 'home' || isCarouselPaused) return undefined
@@ -544,6 +571,11 @@ function App() {
   const navigateTo = (page) => {
     setCurrentPage(page)
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const openBlogPost = (post) => {
+    setSelectedBlogPost(post)
+    navigateTo('blog-article')
   }
 
   const filteredPortfolio = activeCategory === 'All'
@@ -1118,7 +1150,7 @@ function App() {
           </>
         )}
 
-        {/* ==================== INDIVIDUAL BLOG PAGE ==================== */}
+        {/* ==================== BLOG LISTING PAGE ==================== */}
         {currentPage === 'blog' && (
           <>
             <div className="page-header-banner">
@@ -1126,29 +1158,72 @@ function App() {
                 <div className="breadcrumb">
                   <button onClick={() => navigateTo('home')}>Home</button> / <span>Blog</span>
                 </div>
-                <p className="section-tag">{featuredBlogPost.category}</p>
-                <h1>{featuredBlogPost.title}</h1>
-                <p>Posted on {featuredBlogPost.date} by {featuredBlogPost.author}</p>
+                <h1>Apptology Blog</h1>
+                <p>Ideas, founder lessons, mobile industry insights, and Sacramento startup community stories from the Apptology archive.</p>
+              </div>
+            </div>
+
+            <section className="blog-listing">
+              <div className="container blog-listing-layout">
+                <div className="blog-list-grid">
+                  {blogPosts.map((post, index) => (
+                    <article key={post.id} className={`blog-list-card ${index === 0 ? 'is-featured' : ''}`}>
+                      <div className="blog-card-topline">
+                        <span>{post.category}</span>
+                        <time>{post.date}</time>
+                      </div>
+                      <h2>{post.title}</h2>
+                      <p>{post.excerpt}</p>
+                      <div className="blog-card-footer">
+                        <span>By {post.author}</span>
+                        <button className="outline-button" onClick={() => openBlogPost(post)}>Read article →</button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+                <aside className="blog-list-aside">
+                  <span className="section-tag alt">From the archive</span>
+                  <h2>Ideas that move founders forward</h2>
+                  <p>Browse five adapted posts from the original Apptology blog, covering business models, mobile platforms, emerging technology, legal foundations, and startup leadership.</p>
+                  <a href="https://blog.apptology.com/" target="_blank" rel="noopener noreferrer" className="outline-button">Visit original blog →</a>
+                </aside>
+              </div>
+            </section>
+          </>
+        )}
+
+        {/* ==================== INDIVIDUAL BLOG ARTICLE PAGE ==================== */}
+        {currentPage === 'blog-article' && (
+          <>
+            <div className="page-header-banner">
+              <div className="container">
+                <div className="breadcrumb">
+                  <button onClick={() => navigateTo('home')}>Home</button> / <button onClick={() => navigateTo('blog')}>Blog</button> / <span>Article</span>
+                </div>
+                <p className="section-tag">{selectedBlogPost.category}</p>
+                <h1>{selectedBlogPost.title}</h1>
+                <p>Posted on {selectedBlogPost.date} by {selectedBlogPost.author}</p>
               </div>
             </div>
 
             <article className="blog-post">
               <div className="container blog-post-layout">
                 <div className="blog-post-main">
-                  <p className="blog-post-lede">{featuredBlogPost.intro}</p>
-                  {featuredBlogPost.sections.map((section) => (
+                  <p className="blog-post-lede">{selectedBlogPost.intro}</p>
+                  {selectedBlogPost.sections.map((section) => (
                     <section key={section.heading}>
                       <h2>{section.heading}</h2>
                       <p>{section.body}</p>
                     </section>
                   ))}
-                  <p className="blog-post-byline">By {featuredBlogPost.author}, CEO of Apptology and Director of Startup Grind Sacramento.</p>
+                  <p className="blog-post-byline">By {selectedBlogPost.author}. Adapted from the original article on the Apptology Blog.</p>
+                  <a href={selectedBlogPost.sourceUrl} target="_blank" rel="noopener noreferrer" className="outline-button">Read original article →</a>
                 </div>
                 <aside className="blog-post-aside">
-                  <span className="section-tag alt">From the archive</span>
-                  <h3>Mobile experience is business strategy</h3>
-                  <p>Explore the original perspective on responsive design, search visibility, and creating better experiences for mobile visitors.</p>
-                  <button className="outline-button" onClick={() => navigateTo('news')}>View Apptology News →</button>
+                  <span className="section-tag alt">More from the blog</span>
+                  <h3>Keep exploring the archive</h3>
+                  <p>Return to the listing to read more about app development, startup strategy, industry changes, and the Sacramento founder community.</p>
+                  <button className="outline-button" onClick={() => navigateTo('blog')}>Back to blog →</button>
                 </aside>
               </div>
             </article>
