@@ -1,9 +1,9 @@
-# YTrip redesign
+# Apptology redesign
 
-The redesigned YTrip website is a React and Vite app deployed as a Cloudflare Worker with static assets.
+The redesigned Apptology website is a React and Vite app deployed as a Cloudflare Worker with static assets. It includes a modern agency homepage, featured case studies, an agile product lifecycle timeline, separate About and Leadership pages, a source-based News archive, and an individual Blog article page.
 
 - GitHub repository: https://github.com/thepixelwriter/travel-website-ui-ux
-- Live website: https://ytrip-redesign.gaurav-motivation.workers.dev
+- Live website: https://apptology-redesign.gaurav-motivation.workers.dev
 
 ## Local development
 
@@ -29,7 +29,7 @@ npx wrangler login
 npm run deploy
 ```
 
-The Worker name is `ytrip-redesign`. The current public deployment is available at [ytrip-redesign.gaurav-motivation.workers.dev](https://ytrip-redesign.gaurav-motivation.workers.dev). A custom domain can be attached from the Cloudflare dashboard under **Workers & Pages** after deployment.
+The Worker name is `apptology-redesign`. The current public deployment is available at [apptology-redesign.gaurav-motivation.workers.dev](https://apptology-redesign.gaurav-motivation.workers.dev). A custom domain can be attached from the Cloudflare dashboard under **Workers & Pages** after deployment.
 
 ## Automatic GitHub deployment
 

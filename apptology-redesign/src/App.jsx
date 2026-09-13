@@ -437,6 +437,89 @@ const blogArticles = [
   },
 ]
 
+const newsItems = [
+  { date: '06 Nov 2017', title: "Apptology Makes Business of Apps' Best Mobile App Development Companies 2017 List", category: 'Recognition', href: 'http://www.businessofapps.com/guide/app-development-companies/#1' },
+  { date: '12 Sep 2017', title: 'Apptology sponsors the Startup Grind Sacramento event featuring Luxer One Founder Arik Levy.', category: 'Community', href: 'https://www.startupgrind.com/events/details/startup-grind-sacramento-presents-arik-levy-luxer-one#/' },
+  { date: '04 Sep 2017', title: 'Apptology sponsors the Startup Grind Sacramento event featuring GrowthX Founder Will Bunker.', category: 'Community', href: 'https://www.startupgrind.com/events/details/startup-grind-sacramento-presents-will-bunker-growthx-matchcom#/' },
+  { date: '23 Jul 2017', title: 'Apptology sponsors the Startup Grind Sacramento event featuring PowerSchool Co-Founder John Stone.', category: 'Community', href: 'https://www.startupgrind.com/events/details/startup-grind-sacramento-presents-john-stone-fantag-powerschool#/' },
+  { date: '16 Jun 2017', title: "Apptology Makes Design Drizzle's Most Trusted Android App Development Companies for 2017.", category: 'Recognition', href: 'http://designdrizzle.com/most-trusted-android-app-development-companies-for-2017/' },
+  { date: '07 Jun 2017', title: 'Apptology CEO Rich Foreman serves as a judge for AngelHack Sacramento.', category: 'Leadership', href: 'http://angelhack.com/angelhack-global-hackathon-series-sacramento/' },
+  { date: '17 May 2017', title: 'Rich Foreman speaks at the Founder Institute panel “Making the Leap from Employee to Entrepreneur.”', category: 'Speaking', href: 'http://fi.co/courses/making-the-leap-from-employee-to-entrepreneur-in-sacramento' },
+  { date: '08 May 2017', title: 'The Cal Fire Ready for Wildfire app, developed by Apptology, is featured on ABC 30.', category: 'Press', href: null },
+]
+
+const leadershipTeam = [
+  { name: 'Rich Foreman', role: 'Founder & CEO', bio: 'Rich leads Apptology with more than 20 years of experience in leadership, engineering, mobile application development, and sales. He holds a BS in Industrial Engineering from the University of Washington, an MPA from Troy State University, and served as an officer in the U.S. Navy.' },
+  { name: 'Gary Dalal', role: 'Chief Technology Officer', bio: 'Gary brings more than 10 years of experience across software engineering, product management, technical support, and IT consulting. He specializes in full lifecycle technology delivery and translating client requirements into effective technical solutions.' },
+  { name: 'Dana Smith', role: 'Co-Founder', bio: 'Dana has more than 15 years of experience in strategy development, product marketing, and mobile marketing initiatives with technology startups and Silicon Valley industry leaders.' },
+  { name: 'Shellynn Finstad', role: 'Chief Creative Officer', bio: 'Shellynn brings more than 14 years of experience in graphic design, production, account management, content, and high-impact design for mobile technology solutions.' },
+  { name: 'Ankur Bhatnagar', role: 'Director, Canadian Operations', bio: 'Ankur leads Canadian operations and brings more than 15 years of information technology and strategic management consulting experience across healthcare, finance, telecommunications, and public-sector programs.' },
+]
+
+const featuredBlogPost = {
+  title: 'Google Algorithm Change Favors Mobile Friendly Sites',
+  date: 'April 19, 2015',
+  author: 'Rich Foreman',
+  category: 'Using Mobile Technology to Promote Your Business',
+  intro: 'Google announced that mobile friendliness would become a factor in search rankings. For businesses that depend on being found through search, the change made mobile experience a business priority rather than a nice-to-have.',
+  sections: [
+    { heading: 'What makes a site mobile friendly?', body: 'Mobile-friendly pages avoid software that is not commonly supported on phones, use text that can be read without zooming, adapt to the device without horizontal scrolling, and keep links far enough apart to tap accurately.' },
+    { heading: 'Responsive design is the lasting fix', body: 'A separate mobile site can be a quick patch, but responsive design gives people a consistent experience across desktop, tablet, and smartphone screens. The layout adapts to the device instead of asking visitors to work around it.' },
+    { heading: 'Why the experience matters', body: 'Mobile usage continues to shape how people discover and return to businesses. A clear, fast, mobile-friendly experience helps protect search visibility while making it easier for visitors to take the next step.' },
+  ],
+}
+
+const featuredCaseStudies = [
+  {
+    ...portfolioItems[0],
+    eyebrow: 'Healthcare platform',
+    challenge: 'Make provider referrals easier to discover, coordinate, and track across the care journey.',
+    approach: 'Connected provider discovery with referral workflows and outcome visibility in one cross-platform experience.',
+    outcome: 'A clearer digital path for physicians, patients, and care teams.',
+  },
+  {
+    ...portfolioItems[2],
+    eyebrow: 'Restaurant loyalty',
+    challenge: 'Bring ordering, personalization, and repeat visits together for a growing restaurant brand.',
+    approach: 'Combined menu browsing, a custom flavor builder, mobile ordering, and loyalty rewards into one app.',
+    outcome: 'A more useful everyday companion for customers beyond the point of purchase.',
+  },
+  {
+    ...portfolioItems[4],
+    eyebrow: 'Medical education',
+    challenge: 'Turn medical learning into an engaging experience that encourages participation and friendly competition.',
+    approach: 'Designed a quiz and peer challenge flow that makes knowledge testing quick, social, and repeatable.',
+    outcome: 'A focused learning product built around participation and measurable progress.',
+  },
+]
+
+const lifecycleStages = [
+  {
+    number: '01',
+    title: 'Discovery & Strategy',
+    summary: 'Align the opportunity, audience, and business model before production begins.',
+    deliverables: 'Research, product brief, roadmap, and success measures',
+  },
+  {
+    number: '02',
+    title: 'UI/UX Design',
+    summary: 'Shape intuitive journeys and test the experience before committing to a build.',
+    deliverables: 'User flows, wireframes, prototype, and design system',
+  },
+  {
+    number: '03',
+    title: 'Agile Engineering',
+    summary: 'Build in focused increments with regular reviews, testing, and visible progress.',
+    deliverables: 'Sprint releases, integrations, QA, and stakeholder demos',
+  },
+  {
+    number: '04',
+    title: 'Launch & Growth',
+    summary: 'Release confidently, learn from usage, and keep improving the product after launch.',
+    deliverables: 'Store submission, analytics, ASO, and ongoing optimization',
+  },
+]
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
   const [activeCategory, setActiveCategory] = useState('All')
@@ -499,11 +582,18 @@ function App() {
 
           <nav className="main-nav" aria-label="Main navigation">
             <button className={currentPage === 'home' ? 'active' : ''} onClick={() => navigateTo('home')}>Home</button>
-            <button className={currentPage === 'about' ? 'active' : ''} onClick={() => navigateTo('about')}>About Us</button>
+            <div className={`nav-dropdown ${currentPage === 'about' || currentPage === 'leadership' ? 'active' : ''}`}>
+              <button className="nav-dropdown-toggle" onClick={() => navigateTo('about')} aria-haspopup="true">About Us <span aria-hidden="true">⌄</span></button>
+              <div className="nav-dropdown-menu">
+                <button onClick={() => navigateTo('about')}>About Apptology</button>
+                <button onClick={() => navigateTo('leadership')}>Leadership</button>
+              </div>
+            </div>
             <button className={currentPage === 'services' ? 'active' : ''} onClick={() => navigateTo('services')}>Services</button>
             <button className={currentPage === 'ready-made-apps' ? 'active' : ''} onClick={() => navigateTo('ready-made-apps')}>Ready-Made Apps</button>
             <button className={currentPage === 'portfolio' ? 'active' : ''} onClick={() => navigateTo('portfolio')}>Portfolio</button>
-            <button className={currentPage === 'blog' ? 'active' : ''} onClick={() => navigateTo('blog')}>Blog & News</button>
+            <button className={currentPage === 'news' ? 'active' : ''} onClick={() => navigateTo('news')}>News</button>
+            <button className={currentPage === 'blog' ? 'active' : ''} onClick={() => navigateTo('blog')}>Blog</button>
             <button className={currentPage === 'contact' ? 'active' : ''} onClick={() => navigateTo('contact')}>Contact Us</button>
           </nav>
 
@@ -646,33 +736,26 @@ function App() {
                   <button className="outline-button" onClick={() => navigateTo('portfolio')}>View All {portfolioItems.length} Apps →</button>
                 </div>
 
-                <div className="work-grid">
-                  {portfolioItems.slice(0, 6).map((item) => (
-                    <article key={item.id} className="work-card">
-                      <div className="work-image" style={{ backgroundImage: `url(${item.image})` }}>
+                <div className="case-study-grid">
+                  {featuredCaseStudies.map((study) => (
+                    <article key={study.id} className="case-study-card">
+                      <div className="case-study-image" style={{ backgroundImage: `url(${study.image})` }}>
                         <div className="work-image-overlay">
-                          <span className="work-badge">{item.platform}</span>
+                          <span className="work-badge">{study.platform}</span>
                         </div>
                       </div>
-                      <div className="work-copy">
-                        <span>{item.category}</span>
-                        <div className="work-title-row">
-                          <img src={item.iconUrl} alt={item.title} className="app-card-icon-img" onError={(e) => { e.target.style.display = "none"; }} />
-                          <h3 style={{ margin: 0 }}>{item.title}</h3>
+                      <div className="case-study-copy">
+                        <div className="case-study-heading">
+                          <span>{study.eyebrow}</span>
+                          <img src={study.iconUrl} alt="" className="app-card-icon-img" onError={(event) => { event.currentTarget.style.display = 'none' }} />
                         </div>
-                        <p>{item.description}</p>
-                        <div className="store-buttons">
-                          {item.appStoreUrl && (
-                            <a href={item.appStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
-                              <span> App Store</span>
-                            </a>
-                          )}
-                          {item.playStoreUrl && (
-                            <a href={item.playStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
-                              <span>▶ Google Play</span>
-                            </a>
-                          )}
-                        </div>
+                        <h3>{study.title}</h3>
+                        <p className="case-study-description">{study.description}</p>
+                        <dl className="case-study-details">
+                          <div><dt>Challenge</dt><dd>{study.challenge}</dd></div>
+                          <div><dt>Approach</dt><dd>{study.approach}</dd></div>
+                          <div><dt>Outcome</dt><dd>{study.outcome}</dd></div>
+                        </dl>
                       </div>
                     </article>
                   ))}
@@ -687,27 +770,18 @@ function App() {
                   <h2>4 Steps to Mobile App Success</h2>
                 </div>
 
-                <div className="process-grid">
-                  <div className="process-card">
-                    <span>01</span>
-                    <h3>Discovery & Strategy</h3>
-                    <p>We analyze user demand, competitive apps, monetization models, and define product specifications.</p>
-                  </div>
-                  <div className="process-card">
-                    <span>02</span>
-                    <h3>UI/UX Design</h3>
-                    <p>Interactive Figma wireframes, brand design systems, and seamless user journeys built for conversion.</p>
-                  </div>
-                  <div className="process-card">
-                    <span>03</span>
-                    <h3>Agile Engineering</h3>
-                    <p>Clean native or cross-platform code execution with bi-weekly sprint reviews and continuous testing.</p>
-                  </div>
-                  <div className="process-card">
-                    <span>04</span>
-                    <h3>Launch & Growth</h3>
-                    <p>App Store publishing, analytics setup, ongoing maintenance, and App Store Optimization (ASO).</p>
-                  </div>
+                <div className="lifecycle-timeline">
+                  {lifecycleStages.map((stage) => (
+                    <article key={stage.number} className="lifecycle-stage">
+                      <div className="lifecycle-marker">{stage.number}</div>
+                      <div className="lifecycle-content">
+                        <p className="lifecycle-kicker">Stage {stage.number}</p>
+                        <h3>{stage.title}</h3>
+                        <p>{stage.summary}</p>
+                        <strong>{stage.deliverables}</strong>
+                      </div>
+                    </article>
+                  ))}
                 </div>
               </div>
             </section>
@@ -823,6 +897,51 @@ function App() {
                     <p>Proudly recognized by business publications and chambers for veteran business leadership and innovation.</p>
                   </div>
                 </div>
+              </div>
+            </section>
+          </>
+        )}
+
+        {/* ==================== LEADERSHIP PAGE ==================== */}
+        {currentPage === 'leadership' && (
+          <>
+            <div className="page-header-banner">
+              <div className="container">
+                <div className="breadcrumb">
+                  <button onClick={() => navigateTo('home')}>Home</button> / <button onClick={() => navigateTo('about')}>About Us</button> / <span>Leadership</span>
+                </div>
+                <h1>Leadership & Team</h1>
+                <p>Meet the people behind Apptology's strategy, engineering, creativity, and client partnerships.</p>
+              </div>
+            </div>
+
+            <section>
+              <div className="container">
+                <div className="leadership-intro">
+                  <div>
+                    <p className="section-tag alt">Our Team</p>
+                    <h2>Experience across the full mobile product lifecycle</h2>
+                  </div>
+                  <p>Apptology brings together product leadership, technical delivery, marketing strategy, and creative direction to help organizations move from idea to launch.</p>
+                </div>
+                <div className="leadership-grid">
+                  {leadershipTeam.map((member) => (
+                    <article key={member.name} className="leader-card">
+                      <div className="leader-avatar">{member.name.split(' ').map((part) => part[0]).join('')}</div>
+                      <p className="section-tag alt">{member.role}</p>
+                      <h3>{member.name}</h3>
+                      <p>{member.bio}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section className="feature-band">
+              <div className="container leadership-quote">
+                <p className="section-tag alt">From the original site</p>
+                <blockquote>“My ReadyBuilt App provides my customers with useful tools to search MLS, calculate mortgage payments and scan QR codes.”</blockquote>
+                <cite>Melanie Swint, Swint Realty</cite>
               </div>
             </section>
           </>
@@ -948,7 +1067,8 @@ function App() {
                         <div className="store-buttons">
                           {item.appStoreUrl && (
                             <a href={item.appStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
-                              <span> App Store</span>
+                              <span className="store-icon app-store-icon" aria-hidden="true"></span>
+                              <span>App Store</span>
                             </a>
                           )}
                           {item.playStoreUrl && (
@@ -966,32 +1086,72 @@ function App() {
           </>
         )}
 
-        {/* ==================== BLOG / NEWS PAGE ==================== */}
-        {currentPage === 'blog' && (
+        {/* ==================== NEWS PAGE ==================== */}
+        {currentPage === 'news' && (
           <>
             <div className="page-header-banner">
               <div className="container">
                 <div className="breadcrumb">
-                  <button onClick={() => navigateTo('home')}>Home</button> / <span>Blog & News</span>
+                  <button onClick={() => navigateTo('home')}>Home</button> / <span>News</span>
                 </div>
-                <h1>Apptology News & Monetization Guides</h1>
-                <p>Expert insights on mobile app strategy, monetization models, development budgeting, and technology news.</p>
+                <h1>Apptology News</h1>
+                <p>Press coverage, community events, product milestones, and appearances from the Apptology archive.</p>
               </div>
             </div>
 
-            <section>
+            <section className="news-archive-section">
               <div className="container">
-                <div className="news-grid">
-                  {blogArticles.map((article) => (
-                    <article key={article.id} className="news-card">
-                      <span>{article.category}</span>
-                      <h3>{article.title}</h3>
-                      <p>{article.summary}</p>
+                <div className="news-archive">
+                  {newsItems.map((item) => (
+                    <article key={`${item.date}-${item.title}`} className="news-entry">
+                      <time>{item.date}</time>
+                      <div>
+                        <span>{item.category}</span>
+                        <h2>{item.title}</h2>
+                      </div>
+                      {item.href && <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`Read: ${item.title}`}>Read story →</a>}
                     </article>
                   ))}
                 </div>
               </div>
             </section>
+          </>
+        )}
+
+        {/* ==================== INDIVIDUAL BLOG PAGE ==================== */}
+        {currentPage === 'blog' && (
+          <>
+            <div className="page-header-banner">
+              <div className="container">
+                <div className="breadcrumb">
+                  <button onClick={() => navigateTo('home')}>Home</button> / <span>Blog</span>
+                </div>
+                <p className="section-tag">{featuredBlogPost.category}</p>
+                <h1>{featuredBlogPost.title}</h1>
+                <p>Posted on {featuredBlogPost.date} by {featuredBlogPost.author}</p>
+              </div>
+            </div>
+
+            <article className="blog-post">
+              <div className="container blog-post-layout">
+                <div className="blog-post-main">
+                  <p className="blog-post-lede">{featuredBlogPost.intro}</p>
+                  {featuredBlogPost.sections.map((section) => (
+                    <section key={section.heading}>
+                      <h2>{section.heading}</h2>
+                      <p>{section.body}</p>
+                    </section>
+                  ))}
+                  <p className="blog-post-byline">By {featuredBlogPost.author}, CEO of Apptology and Director of Startup Grind Sacramento.</p>
+                </div>
+                <aside className="blog-post-aside">
+                  <span className="section-tag alt">From the archive</span>
+                  <h3>Mobile experience is business strategy</h3>
+                  <p>Explore the original perspective on responsive design, search visibility, and creating better experiences for mobile visitors.</p>
+                  <button className="outline-button" onClick={() => navigateTo('news')}>View Apptology News →</button>
+                </aside>
+              </div>
+            </article>
           </>
         )}
 
@@ -1134,10 +1294,12 @@ function App() {
             <h3>Navigation</h3>
             <button onClick={() => navigateTo('home')}>Home</button>
             <button onClick={() => navigateTo('about')}>About Us</button>
+            <button onClick={() => navigateTo('leadership')}>Leadership</button>
             <button onClick={() => navigateTo('services')}>Services</button>
             <button onClick={() => navigateTo('ready-made-apps')}>Ready-Made Apps</button>
             <button onClick={() => navigateTo('portfolio')}>Portfolio</button>
-            <button onClick={() => navigateTo('blog')}>Blog & News</button>
+            <button onClick={() => navigateTo('news')}>News</button>
+            <button onClick={() => navigateTo('blog')}>Blog</button>
             <button onClick={() => navigateTo('contact')}>Contact Us</button>
           </div>
 
