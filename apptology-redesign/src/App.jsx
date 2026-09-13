@@ -4,67 +4,179 @@ import './App.css'
 const portfolioItems = [
   {
     id: 'docreferral',
-    title: 'DocReferral Healthcare',
+    title: 'DocReferral Healthcare Platform',
     category: 'Healthcare',
     platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
     description: 'Comprehensive medical provider referral and discovery platform enabling doctors to seamlessly refer patients and track care outcomes.',
   },
   {
-    id: 'vetran-owned',
-    title: 'Veteran Owned Business',
-    category: 'Community & Local',
-    platform: 'iOS & Android',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
-    description: 'Directory and geolocation discovery application helping consumers discover and support veteran-owned small businesses across the US.',
-  },
-  {
-    id: 'folsom-app',
-    title: 'City of Folsom Mobile App',
-    category: 'Community & Local',
-    platform: 'iOS & Android',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
-    description: 'Official municipal application for residents of Folsom, offering city news, utility reporting, events calendar, and local government services.',
-  },
-  {
-    id: 'nicolas-garden',
-    title: 'Nicolas Garden (Fox40 Featured)',
-    category: 'Education & Utility',
-    platform: 'iOS Mobile',
-    image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=900&q=80',
-    description: 'Interactive educational app teaching children healthy nutrition and gardening habits through gamification and garden tracking.',
-  },
-  {
-    id: 'jt-environmental',
+    id: 'environmental-impact-calculator',
     title: 'JT Environmental Impact Calculator',
     category: 'Education & Utility',
-    platform: 'Cross-Platform Web & Mobile',
+    platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
     description: 'Utility calculator enabling commercial and residential users to measure environmental compliance and energy footprint savings.',
   },
   {
-    id: 'sarta-mobile',
-    title: 'SARTA Tech Ecosystem',
-    category: 'Enterprise & Business',
+    id: 'wing-zone',
+    title: 'Wing Zone Restaurant App',
+    category: 'Food & Dining',
     platform: 'iOS & Android',
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80',
-    description: 'Sacramento Regional Technology Alliance member portal connecting technology entrepreneurs, investors, and startup mentors.',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
+    description: 'Mobile food ordering, customized wing flavor builder, and loyalty rewards app for the popular Wing Zone restaurant franchise chain.',
   },
   {
-    id: 'wiss-mobile',
-    title: 'WISS Workplace Safety',
-    category: 'Enterprise & Business',
+    id: 'palm-springs',
+    title: 'Palm Springs Mid-Century Modern Guide',
+    category: 'Travel & Lifestyle',
     platform: 'iOS & Android',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80',
-    description: 'Workplace injury prevention and incident reporting system built for enterprise safety officers and field personnel.',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
+    description: 'Self-guided architectural tour and mapping guide featuring iconic mid-century modern homes and desert landmarks in Palm Springs.',
   },
   {
-    id: 'sac-black-chamber',
-    title: 'Sacramento Black Chamber',
+    id: 'jama-network-challenge',
+    title: 'The JAMA Network Challenge',
+    category: 'Healthcare',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80',
+    description: 'Interactive medical knowledge quiz and peer challenge platform developed for Journal of the American Medical Association readers.',
+  },
+  {
+    id: 'dream-moods',
+    title: 'Dream Moods Dictionary & Journal',
+    category: 'Lifestyle & Entertainment',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=900&q=80',
+    description: 'Official mobile app for DreamMoods.com featuring a comprehensive 6000+ word dream dictionary and dream journal tracker.',
+  },
+  {
+    id: 'hp-enterprise-printers',
+    title: 'HP Enterprise Printers Sales Tool',
+    category: 'Enterprise & Business',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80',
+    description: 'Enterprise sales enablement tool showcasing HP printer specifications, product catalog demos, and ROI calculators.',
+  },
+  {
+    id: 'vsos-emergency-response-app',
+    title: 'VSOS Panic & Emergency Response System',
+    category: 'Education & Utility',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=900&q=80',
+    description: 'Instant emergency broadcast and SOS panic alert application linking users with local emergency contacts and GPS location sharing.',
+  },
+  {
+    id: 'swint-real-estate',
+    title: 'Swint Real Estate Mobile App',
+    category: 'Real Estate',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80',
+    description: 'Mobile MLS search, interactive map listings, mortgage calculator, and agent scheduling app for Swint Real Estate buyers.',
+  },
+  {
+    id: 'ibleed',
+    title: 'iBleed Hemophilia Healthcare Tracker',
+    category: 'Healthcare',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80',
+    description: 'Specialized healthcare tracking log for hemophilia patients and caregivers to record bleed incidents and medication doses.',
+  },
+  {
+    id: 'sienna-restaurant',
+    title: 'Sienna Restaurant Dining App',
+    category: 'Food & Dining',
+    platform: 'iOS Mobile',
+    image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=80',
+    description: 'Upscale dining app with digital reservation booking, chef recommendations, wine pairings, and customer loyalty rewards.',
+  },
+  {
+    id: 'squarecoins',
+    title: 'Square Coins Rewards & Loyalty',
+    category: 'Education & Utility',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=900&q=80',
+    description: 'Digital rewards tracking and virtual currency utility for mobile gaming platforms and loyalty merchants.',
+  },
+  {
+    id: 'cms-asia-connect',
+    title: 'CMS Asia Connect Conference App',
+    category: 'Enterprise & Business',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=900&q=80',
+    description: 'B2B conference networking, agenda management, speaker bios, and live attendee polling platform for CMS Asia summits.',
+  },
+  {
+    id: 'metro-edge',
+    title: 'Metro EDGE Young Professionals Network',
     category: 'Community & Local',
     platform: 'iOS & Android',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80',
-    description: 'Member directory, event registration, and business networking hub for the Sacramento Black Chamber of Commerce.',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
+    description: 'Membership portal and event manager for young professionals networking under the Sacramento Metro Chamber.',
+  },
+  {
+    id: 'ez-abc-keyboard',
+    title: 'EZ ABC Keyboard for Toddlers',
+    category: 'Education & Utility',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80',
+    description: 'Custom simplified alphabetical keyboard interface designed to help toddlers and early learners type and read easily.',
+  },
+  {
+    id: 'emergycare',
+    title: 'EmergyCare Emergency Transport App',
+    category: 'Healthcare',
+    platform: 'Android & iOS',
+    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80',
+    description: 'Emergency medical services transport dispatcher and patient care resource app for healthcare responders.',
+  },
+  {
+    id: 'betsizer',
+    title: 'Betsizer Sports Analytics Calculator',
+    category: 'Education & Utility',
+    platform: 'Android',
+    image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80',
+    description: 'Mathematical odds calculator and bankroll strategy tool for sports enthusiasts and analytical wagerers.',
+  },
+  {
+    id: 'nicholas-gunn',
+    title: 'Nicholas Gunn Music Streaming App',
+    category: 'Lifestyle & Entertainment',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80',
+    description: 'Official artist music streaming, concert tour date calendar, and store app for Billboard-charting musician Nicholas Gunn.',
+  },
+  {
+    id: 'sac-guitar-society',
+    title: 'Sacramento Guitar Society',
+    category: 'Community & Local',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80',
+    description: 'Concert schedule, masterclass workshops, sheet music archive, and member portal for guitar enthusiasts in Northern California.',
+  },
+  {
+    id: 'cascade-pest-control',
+    title: 'Cascade Pest Control Inspection App',
+    category: 'Enterprise & Business',
+    platform: 'iPad & iOS',
+    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80',
+    description: 'Commercial field service inspection form, digital signature capture, and customer report generator for field technicians.',
+  },
+  {
+    id: 'leadership-sacramento',
+    title: 'Leadership Sacramento Civic Portal',
+    category: 'Community & Local',
+    platform: 'iPad & Mobile',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80',
+    description: 'Civic leadership directory, class cohort schedule, and community project management system for Sacramento Chamber fellows.',
+  },
+  {
+    id: 'lake-fork-fishing',
+    title: 'Lake Fork Bass Fishing Guide',
+    category: 'Travel & Lifestyle',
+    platform: 'iOS & Android',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80',
+    description: 'GPS hotspot lake maps, weather forecasting, lure selection guide, and tournament catch logging for trophy bass anglers.',
   },
 ]
 
@@ -241,15 +353,16 @@ function App() {
         </div>
       </div>
 
-      {/* Main Header */}
+      {/* Main Header with Actual Apptology Logo */}
       <header className="site-header">
         <div className="container nav-inner">
           <div className="brand" onClick={() => navigateTo('home')} role="button" tabIndex={0}>
-            <span className="brand-mark">A</span>
-            <span className="brand-copy">
-              <strong>Apptology<span>.</span></strong>
-              <small>APP DEVELOPMENT</small>
-            </span>
+            <img 
+              src="/assets/apptology-logo.png" 
+              onError={(e) => { e.target.onerror=null; e.target.src="https://apptology.com/images/apptology-logo.png" }}
+              alt="Apptology Mobile App Development Company Logo" 
+              className="brand-logo-img" 
+            />
           </div>
 
           <nav className="main-nav" aria-label="Main navigation">
@@ -410,14 +523,14 @@ function App() {
               <div className="container">
                 <div className="section-header">
                   <div>
-                    <p className="section-tag alt">Featured App Portfolio</p>
-                    <h2>Selected Work & Mobile Case Studies</h2>
+                    <p className="section-tag alt">Real Apptology Portfolio Showcase</p>
+                    <h2>Selected Apps Built for Clients</h2>
                   </div>
-                  <button className="outline-button" onClick={() => navigateTo('portfolio')}>View All Projects →</button>
+                  <button className="outline-button" onClick={() => navigateTo('portfolio')}>View All {portfolioItems.length} Apps →</button>
                 </div>
 
                 <div className="work-grid">
-                  {portfolioItems.slice(0, 3).map((item) => (
+                  {portfolioItems.slice(0, 6).map((item) => (
                     <article key={item.id} className="work-card" onClick={() => navigateTo('portfolio')} style={{ cursor: 'pointer' }}>
                       <div className="work-image" style={{ backgroundImage: `url(${item.image})` }}>
                         <div className="work-image-overlay">
@@ -644,8 +757,8 @@ function App() {
                 <div className="breadcrumb">
                   <button onClick={() => navigateTo('home')}>Home</button> / <span>Portfolio</span>
                 </div>
-                <h1>Apptology Mobile App Showcase</h1>
-                <p>Explore a selection of our 400+ launched mobile applications across healthcare, local business, education, and enterprise.</p>
+                <h1>Apptology Mobile App Showcase ({portfolioItems.length} Apps)</h1>
+                <p>Explore real apps developed and launched by Apptology across healthcare, local business, entertainment, education, real estate, and enterprise.</p>
               </div>
             </div>
 
@@ -653,7 +766,7 @@ function App() {
               <div className="container">
                 {/* Category Filters */}
                 <div className="portfolio-filter">
-                  {['All', 'Healthcare', 'Community & Local', 'Education & Utility', 'Enterprise & Business'].map(cat => (
+                  {['All', 'Healthcare', 'Food & Dining', 'Real Estate', 'Community & Local', 'Education & Utility', 'Enterprise & Business', 'Travel & Lifestyle', 'Lifestyle & Entertainment'].map(cat => (
                     <button
                       key={cat}
                       className={`filter-btn ${activeCategory === cat ? 'active' : ''}`}
@@ -835,11 +948,13 @@ function App() {
         <div className="container footer-grid">
           <div>
             <div className="brand footer-brand" onClick={() => navigateTo('home')}>
-              <span className="brand-mark">A</span>
-              <span className="brand-copy">
-                <strong>Apptology<span>.</span></strong>
-                <small>APP DEVELOPMENT</small>
-              </span>
+              <img 
+                src="/assets/apptology-logo.png" 
+                onError={(e) => { e.target.onerror=null; e.target.src="https://apptology.com/images/apptology-logo.png" }}
+                alt="Apptology Logo" 
+                className="brand-logo-img" 
+                style={{ filter: 'brightness(0) invert(1)' }}
+              />
             </div>
             <p className="footer-copy">
               Apptology is a pioneer mobile application development firm crafting custom iOS, Android, and web applications 
