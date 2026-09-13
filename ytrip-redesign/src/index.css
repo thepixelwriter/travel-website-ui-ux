@@ -1,0 +1,81 @@
+﻿:root {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --paper: #ffffff;
+  --ink: #1d2a39;
+  --muted: #5f6f7d;
+  --line: #dfe8ee;
+  --blue: #146b86;
+  --coral: #ef7a5c;
+  --yellow: #f4c452;
+  --shadow: 0 18px 40px rgba(17, 24, 39, 0.12);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+button, input, select {
+  border-radius: 12px;
+}
+
+input, select, textarea {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background-color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
