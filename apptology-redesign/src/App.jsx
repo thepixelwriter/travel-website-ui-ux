@@ -531,7 +531,7 @@ function App() {
 
                 <div className="work-grid">
                   {portfolioItems.slice(0, 6).map((item) => (
-                    <article key={item.id} className="work-card" onClick={() => navigateTo('portfolio')} style={{ cursor: 'pointer' }}>
+                    <article key={item.id} className="work-card">
                       <div className="work-image" style={{ backgroundImage: `url(${item.image})` }}>
                         <div className="work-image-overlay">
                           <span className="work-badge">{item.platform}</span>
@@ -539,8 +539,23 @@ function App() {
                       </div>
                       <div className="work-copy">
                         <span>{item.category}</span>
-                        <h3>{item.title}</h3>
+                        <div className="work-title-row">
+                          <span className="app-card-icon">{item.icon}</span>
+                          <h3 style={{ margin: 0 }}>{item.title}</h3>
+                        </div>
                         <p>{item.description}</p>
+                        <div className="store-buttons">
+                          {item.appStoreUrl && (
+                            <a href={item.appStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
+                              <span> App Store</span>
+                            </a>
+                          )}
+                          {item.playStoreUrl && (
+                            <a href={item.playStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
+                              <span>▶ Google Play</span>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </article>
                   ))}
@@ -787,8 +802,23 @@ function App() {
                       </div>
                       <div className="work-copy">
                         <span>{item.category}</span>
-                        <h3>{item.title}</h3>
+                        <div className="work-title-row">
+                          <span className="app-card-icon">{item.icon}</span>
+                          <h3 style={{ margin: 0 }}>{item.title}</h3>
+                        </div>
                         <p>{item.description}</p>
+                        <div className="store-buttons">
+                          {item.appStoreUrl && (
+                            <a href={item.appStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
+                              <span> App Store</span>
+                            </a>
+                          )}
+                          {item.playStoreUrl && (
+                            <a href={item.playStoreUrl} target="_blank" rel="noopener noreferrer" className="store-btn">
+                              <span>▶ Google Play</span>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </article>
                   ))}
