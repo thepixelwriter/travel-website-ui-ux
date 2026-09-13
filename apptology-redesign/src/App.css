@@ -134,7 +134,14 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  padding: 15px;
   cursor: pointer;
+}
+
+.brand-logo-img {
+  width: 170px;
+  height: 70px;
+  object-fit: contain;
 }
 
 .brand-mark {
@@ -427,6 +434,168 @@ select {
   align-items: center;
 }
 
+.hero-carousel {
+  min-width: 0;
+}
+
+.reference-carousel {
+  width: min(100%, 570px);
+}
+
+.reference-slide-frame {
+  position: relative;
+  aspect-ratio: 1.08 / 1;
+  overflow: hidden;
+  border: 1px solid rgba(57, 181, 74, 0.4);
+  border-radius: 22px;
+  background: #07170c;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.42);
+}
+
+.reference-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+  pointer-events: none;
+}
+
+.reference-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reference-slide img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(7, 23, 12, 0.72);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-control:hover,
+.carousel-control:focus-visible {
+  background: var(--primary);
+  border-color: white;
+}
+
+.carousel-prev { left: 14px; }
+.carousel-next { right: 14px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.carousel-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.38);
+  cursor: pointer;
+  transition: width 0.2s ease, border-radius 0.2s ease, background 0.2s ease;
+}
+
+.carousel-dots button.is-active {
+  width: 28px;
+  border-radius: 999px;
+  background: #4ade80;
+}
+
+/* The reference site uses a wide, edge-to-edge banner carousel. */
+.reference-hero {
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.reference-carousel-full {
+  width: min(100%, 1170px);
+  margin: 0 auto;
+}
+
+.reference-carousel-full .reference-slide-frame {
+  width: 100%;
+  height: clamp(320px, 36vw, 430px);
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.reference-carousel-full .reference-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reference-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 46px;
+  height: 84px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #158b91;
+  font-family: Georgia, serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 0.7;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.reference-arrow:hover,
+.reference-arrow:focus-visible {
+  color: #0a5d63;
+}
+
+.reference-arrow-prev {
+  left: 20px;
+}
+
+.reference-arrow-next {
+  right: 20px;
+}
+
+.reference-arrow-prev:hover,
+.reference-arrow-prev:focus-visible {
+  transform: translate(-3px, -50%);
+}
+
+.reference-arrow-next:hover,
+.reference-arrow-next:focus-visible {
+  transform: translate(3px, -50%);
+}
+
 .device-frame {
   position: relative;
   width: min(100%, 460px);
@@ -576,6 +745,102 @@ select {
 /* General Section Layouts */
 section {
   padding: 72px 0;
+}
+
+.logo-rail-section {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 54px 0;
+}
+
+.brand-rail {
+  background: var(--surface-alt);
+}
+
+.logo-rail-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.logo-rail-heading .section-tag {
+  margin: 0;
+}
+
+.logo-rail-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 900;
+}
+
+.logo-rail-window {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 0;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.logo-rail-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 18px;
+  animation: logo-rail-scroll 42s linear infinite;
+}
+
+.brand-track {
+  animation-duration: 68s;
+}
+
+.logo-rail-window:hover .logo-rail-track,
+.logo-rail-window:focus-within .logo-rail-track {
+  animation-play-state: paused;
+}
+
+.logo-rail-item {
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 92px;
+  flex: 0 0 170px;
+  padding: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.logo-rail-item a {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.logo-rail-item img {
+  display: block;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  width: auto;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+}
+
+@keyframes logo-rail-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 9px)); }
 }
 
 .section-header {
@@ -1134,6 +1399,52 @@ section {
 }
 
 @media (max-width: 600px) {
+  .logo-rail-section {
+    padding: 40px 0;
+  }
+
+  .logo-rail-heading {
+    display: block;
+  }
+
+  .logo-rail-heading h2 {
+    margin-top: 8px;
+  }
+
+  .logo-rail-item {
+    width: 140px;
+    height: 78px;
+    flex-basis: 140px;
+  }
+
+  .reference-carousel-full .reference-slide-frame {
+    height: min(560px, 118vw);
+  }
+
+  .reference-arrow {
+    width: 34px;
+    height: 64px;
+    font-size: 3.4rem;
+  }
+
+  .reference-arrow-prev {
+    left: 6px;
+  }
+
+  .reference-arrow-next {
+    right: 6px;
+  }
+
+  .reference-slide-frame {
+    aspect-ratio: 0.82 / 1;
+    border-radius: 16px;
+  }
+
+  .carousel-control {
+    width: 36px;
+    height: 36px;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
   }

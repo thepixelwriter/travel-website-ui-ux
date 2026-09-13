@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 const portfolioItems = [
   {
     id: 'docreferral',
     title: 'DocReferral Healthcare Platform',
-    iconUrl: 'https://apptology.com/images/dignity_health_icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-0.png',
     category: 'Healthcare',
     platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
@@ -16,7 +16,7 @@ const portfolioItems = [
   {
     id: 'environmental-impact-calculator',
     title: 'JT Environmental Impact Calculator',
-    iconUrl: 'https://apptology.com/images/portfolio/environmental-logo.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-1.png',
     category: 'Education & Utility',
     platform: 'iOS, Android & Web',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
@@ -27,7 +27,7 @@ const portfolioItems = [
   {
     id: 'wing-zone',
     title: 'Wing Zone Restaurant App',
-    iconUrl: 'https://apptology.com/images/portfolio/WingZone_icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-2.png',
     category: 'Food & Dining',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
@@ -38,7 +38,7 @@ const portfolioItems = [
   {
     id: 'palm-springs',
     title: 'Palm Springs Mid-Century Modern Guide',
-    iconUrl: 'https://apptology.com/images/portfolio/logo-palm-springs.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-3.png',
     category: 'Travel & Lifestyle',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
@@ -49,7 +49,7 @@ const portfolioItems = [
   {
     id: 'jama-network-challenge',
     title: 'The JAMA Network Challenge',
-    iconUrl: 'https://apptology.com/images/jama_appicon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-4.png',
     category: 'Healthcare',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80',
@@ -60,7 +60,7 @@ const portfolioItems = [
   {
     id: 'dream-moods',
     title: 'Dream Moods Dictionary & Journal',
-    iconUrl: 'https://apptology.com/images/dream-moods-logo.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-5.png',
     category: 'Lifestyle & Entertainment',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=900&q=80',
@@ -71,7 +71,7 @@ const portfolioItems = [
   {
     id: 'hp-enterprise-printers',
     title: 'HP Enterprise Printers Sales Tool',
-    iconUrl: 'https://apptology.com/images/portfolio/hp-icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-6.png',
     category: 'Enterprise & Business',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80',
@@ -82,7 +82,7 @@ const portfolioItems = [
   {
     id: 'vsos-emergency-response-app',
     title: 'VSOS Panic & Emergency Response System',
-    iconUrl: 'https://apptology.com/images/portfolio/vSOS-anroid.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-7.png',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=900&q=80',
@@ -93,7 +93,7 @@ const portfolioItems = [
   {
     id: 'swint-real-estate',
     title: 'Swint Real Estate Mobile App',
-    iconUrl: 'https://apptology.com/images/swint-icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-8.png',
     category: 'Real Estate',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80',
@@ -104,7 +104,7 @@ const portfolioItems = [
   {
     id: 'ibleed',
     title: 'iBleed Hemophilia Healthcare Tracker',
-    iconUrl: 'https://apptology.com/images/portfolio/ibleed-icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-9.png',
     category: 'Healthcare',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80',
@@ -115,7 +115,7 @@ const portfolioItems = [
   {
     id: 'sienna-restaurant',
     title: 'Sienna Restaurant Dining App',
-    iconUrl: 'https://apptology.com/images/sarta-blackbery-logo.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-10.png',
     category: 'Food & Dining',
     platform: 'iOS Mobile',
     image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=80',
@@ -126,7 +126,7 @@ const portfolioItems = [
   {
     id: 'squarecoins',
     title: 'Square Coins Rewards & Loyalty',
-    iconUrl: 'https://apptology.com/images/portfolio/SquareCoins-icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-11.png',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=900&q=80',
@@ -137,7 +137,7 @@ const portfolioItems = [
   {
     id: 'cms-asia-connect',
     title: 'CMS Asia Connect Conference App',
-    iconUrl: 'https://apptology.com/images/cms_appicon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-12.png',
     category: 'Enterprise & Business',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=900&q=80',
@@ -148,7 +148,7 @@ const portfolioItems = [
   {
     id: 'metro-edge',
     title: 'Metro EDGE Young Professionals Network',
-    iconUrl: 'https://apptology.com/images/MetroEDGE_appicon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-13.png',
     category: 'Community & Local',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80',
@@ -159,7 +159,7 @@ const portfolioItems = [
   {
     id: 'ez-abc-keyboard',
     title: 'EZ ABC Keyboard for Toddlers',
-    iconUrl: 'https://apptology.com/images/ez-one-hand-keyboard-icon.jpg',
+    iconUrl: '/assets/reference/portfolio-icons/icon-14.jpg',
     category: 'Education & Utility',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80',
@@ -170,7 +170,7 @@ const portfolioItems = [
   {
     id: 'emergycare',
     title: 'EmergyCare Emergency Transport App',
-    iconUrl: 'https://apptology.com/images/emergycare-small-android.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-15.png',
     category: 'Healthcare',
     platform: 'Android & iOS',
     image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80',
@@ -181,7 +181,7 @@ const portfolioItems = [
   {
     id: 'betsizer',
     title: 'Betsizer Sports Analytics Calculator',
-    iconUrl: 'https://apptology.com/images/Betsizer-anroid.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-16.png',
     category: 'Education & Utility',
     platform: 'Android',
     image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80',
@@ -192,7 +192,7 @@ const portfolioItems = [
   {
     id: 'nicholas-gunn',
     title: 'Nicholas Gunn Music Streaming App',
-    iconUrl: 'https://apptology.com/images/portfolio/ng-icon-blackberry.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-17.png',
     category: 'Lifestyle & Entertainment',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80',
@@ -203,7 +203,7 @@ const portfolioItems = [
   {
     id: 'sac-guitar-society',
     title: 'Sacramento Guitar Society',
-    iconUrl: 'https://apptology.com/images/sacramento-guitar_blackberry.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-18.png',
     category: 'Community & Local',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80',
@@ -214,7 +214,7 @@ const portfolioItems = [
   {
     id: 'cascade-pest-control',
     title: 'Cascade Pest Control Inspection App',
-    iconUrl: 'https://apptology.com/images/Cascade-logo.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-19.png',
     category: 'Enterprise & Business',
     platform: 'iPad & iOS',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80',
@@ -225,7 +225,7 @@ const portfolioItems = [
   {
     id: 'leadership-sacramento',
     title: 'Leadership Sacramento Civic Portal',
-    iconUrl: 'https://apptology.com/images/Leadership_appicon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-20.png',
     category: 'Community & Local',
     platform: 'iPad & Mobile',
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80',
@@ -236,7 +236,7 @@ const portfolioItems = [
   {
     id: 'lake-fork-fishing',
     title: 'Lake Fork Bass Fishing Guide',
-    iconUrl: 'https://apptology.com/images/lake_icon.png',
+    iconUrl: '/assets/reference/portfolio-icons/icon-21.png',
     category: 'Travel & Lifestyle',
     platform: 'iOS & Android',
     image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80',
@@ -245,6 +245,56 @@ const portfolioItems = [
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lakefork.bass',
   },
 ];
+
+const carouselSlides = Array.from({ length: 17 }, (_, index) => {
+  const number = index.toString().padStart(2, '0')
+  const extension = index === 5 ? 'jpg' : 'png'
+  return {
+    desktop: `/assets/reference/banner_k/${number}.${extension}`,
+    mobile: `/assets/reference/banner_k/${number}_mobile.png`,
+    fallback: `https://apptology.com/images/banner_k/${number}.${extension}`,
+    label: `Featured Apptology project ${index + 1}`,
+  }
+})
+
+const recognitionLogos = Array.from({ length: 14 }, (_, index) => ({
+  src: `/assets/reference/client-logos/web${index + 1}.jpg`,
+  fallback: `https://apptology.com/images/mockup/web${index + 1}.jpg`,
+  alt: index === 6 ? 'Better Business Bureau' : index === 7 ? 'Sarta' : 'Vetran Owned Business',
+}))
+
+const brandLogos = [
+  ['21_21.jpg', 'http://www.meetup.com/Startup-Grind-Sacramento/events/225592679/'],
+  ['22_22.jpg', '#'],
+  ['23_23.jpg', '#'],
+  ['24_24.jpg', '#'],
+  ['25_25.jpg', '#'],
+  ['26_26.jpg', '#'],
+  ['2_2.jpg', 'http://www.sarta.org/entrepreneur-members.html'],
+  ['3_3.jpg', '#'],
+  ['4_4.jpg', null],
+  ['5_5.jpg', '#'],
+  ['6_6.jpg', 'http://www.bizjournals.com/sacramento/print-edition/2012/10/05/folsom-apptology-apps-small-business.html'],
+  ['7_7.jpg', 'http://apptology.com/backup/about-apptology.html#'],
+  ['8_8.jpg', '#'],
+  ['9_9.jpg', '#'],
+  ['10_10.jpg', '#'],
+  ['11_11.jpg', 'http://www.amazon.com/Tap-into-Mobile-Economy-Appreneurs/dp/061575600X'],
+  ['12_12.jpg', 'http://www.folsomtelegraph.com/article/download-folsom%E2%80%99s-new-mobile-app'],
+  ['13_13.jpg', 'http://youtu.be/IEXMxqiv-as'],
+  ['14_14.jpg', 'http://www.sacblackchamber.org/images/enews_attachments/connectionopolisflier.pdf'],
+  ['15_15.jpg', 'http://www.njsba.org/news/school-leader/07082013/going-mobile.php'],
+  ['16_16.jpg', 'http://fox40.com/2013/10/16/nicolas-garden-app-showcased-at-sarta/'],
+  ['17_17.jpg', 'http://www.bizjournals.com/sacramento/promo/SBJSpeakerSpace#F'],
+  ['18_18.jpg', '#'],
+  ['19_19.jpg', '#'],
+  ['20_20.jpg', '#'],
+].map(([file, href]) => ({
+  src: `/assets/reference/client-logos/${file}`,
+  fallback: `https://apptology.com/images/${file}`,
+  href,
+  alt: file === '2_2.jpg' ? 'Sarta' : file === '3_3.jpg' || file === '5_5.jpg' || file === '6_6.jpg' || file === '8_8.jpg' ? 'Vetran Owned Business' : '',
+}))
 
 const servicesList = [
   {
@@ -391,6 +441,22 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home')
   const [activeCategory, setActiveCategory] = useState('All')
   const [contactSubmitted, setContactSubmitted] = useState(false)
+  const [activeSlide, setActiveSlide] = useState(0)
+  const [isCarouselPaused, setIsCarouselPaused] = useState(false)
+
+  useEffect(() => {
+    if (currentPage !== 'home' || isCarouselPaused) return undefined
+
+    const timer = window.setInterval(() => {
+      setActiveSlide((slide) => (slide + 1) % carouselSlides.length)
+    }, 5500)
+
+    return () => window.clearInterval(timer)
+  }, [currentPage, isCarouselPaused])
+
+  const changeSlide = (direction) => {
+    setActiveSlide((slide) => (slide + direction + carouselSlides.length) % carouselSlides.length)
+  }
 
   const navigateTo = (page) => {
     setCurrentPage(page)
@@ -450,61 +516,46 @@ function App() {
         {/* ==================== HOME PAGE ==================== */}
         {currentPage === 'home' && (
           <>
-            <section className="hero">
-              <div className="container hero-grid">
-                <div className="hero-copy">
-                  <p className="section-tag">Pioneer Mobile App Development Company</p>
-                  <h1>Custom Mobile & Web Apps Built for <span>Real Business Growth</span></h1>
-                  <p className="lead">
-                    Apptology designs and engineers high-performance iOS, Android, and web applications. 
-                    From custom enterprise software to ready-made mobile app solutions, we turn ideas into market leaders.
-                  </p>
-
-                  <div className="hero-actions">
-                    <button className="primary-button" onClick={() => navigateTo('contact')}>Book a Free Consultation</button>
-                    <button className="secondary-button" onClick={() => navigateTo('portfolio')}>View Our Portfolio</button>
-                  </div>
-
-                  <div className="hero-trust">
-                    <span>Featured in Media & Industry Associations:</span>
-                    <div className="trust-logos">
-                      <span>ABC News10</span>
-                      <span>Fox40</span>
-                      <span>Sacramento Business Journal</span>
-                      <span>SARTA</span>
-                      <span>Veteran Owned</span>
-                    </div>
-                  </div>
+            <section className="reference-hero">
+              <div
+                className="reference-carousel reference-carousel-full"
+                aria-label="Apptology featured projects"
+                onMouseEnter={() => setIsCarouselPaused(true)}
+                onMouseLeave={() => setIsCarouselPaused(false)}
+              >
+                <div className="reference-slide-frame">
+                  {carouselSlides.map((slide, index) => (
+                    <picture key={slide.desktop} className={`reference-slide ${index === activeSlide ? 'is-active' : ''}`}>
+                      <source media="(max-width: 600px)" srcSet={slide.mobile} />
+                      <img
+                        src={slide.desktop}
+                        alt={slide.label}
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                        onError={(event) => {
+                          if (event.currentTarget.src !== slide.fallback) event.currentTarget.src = slide.fallback
+                        }}
+                      />
+                    </picture>
+                  ))}
+                  <button className="reference-arrow reference-arrow-prev" type="button" onClick={() => changeSlide(-1)} aria-label="Previous featured project">‹</button>
+                  <button className="reference-arrow reference-arrow-next" type="button" onClick={() => changeSlide(1)} aria-label="Next featured project">›</button>
                 </div>
+              </div>
+            </section>
 
-                <div className="hero-visual">
-                  <div className="device-frame">
-                    <div className="app-card-main">
-                      <div className="mini-header">
-                        <span className="dot dot-1" />
-                        <span className="dot dot-2" />
-                        <span className="dot dot-3" />
+            <section className="logo-rail-section recognition-rail" aria-labelledby="recognition-rail-title">
+              <div className="container">
+                <div className="logo-rail-heading">
+                  <p className="section-tag alt">Recognition & Trust</p>
+                  <h2 id="recognition-rail-title">Apptology in the Community</h2>
+                </div>
+                <div className="logo-rail-window">
+                  <div className="logo-rail-track recognition-track">
+                    {[...recognitionLogos, ...recognitionLogos].map((logo, index) => (
+                      <div className="logo-rail-item" key={`${logo.src}-${index}`}>
+                        <img src={logo.src} alt={logo.alt} loading="lazy" onError={(event) => { event.currentTarget.src = logo.fallback }} />
                       </div>
-                      <div className="app-hero-panel">
-                        <p>Apptology Product Engine</p>
-                        <h3>Native Speed & Modern UX</h3>
-                      </div>
-                      <div className="stat-stack">
-                        <div>
-                          <strong>400+</strong>
-                          <span>Apps Launched</span>
-                        </div>
-                        <div>
-                          <strong>15+</strong>
-                          <span>Years Excellence</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="floating-card">
-                      <span>🚀 Tap into Mobile Economy</span>
-                      <strong>Apptology Platform</strong>
-                      <small>iOS • Android • Web • Cloud</small>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -677,6 +728,27 @@ function App() {
                     <p>“Rich Foreman and the Apptology team are top-tier professionals. They understood our community requirements and built a product our users love.”</p>
                     <footer>— Director, Veteran Owned Business Directory</footer>
                   </blockquote>
+                </div>
+              </div>
+            </section>
+
+            <section className="logo-rail-section brand-rail" aria-labelledby="brand-rail-title">
+              <div className="container">
+                <div className="logo-rail-heading">
+                  <p className="section-tag alt">Featured Connections</p>
+                  <h2 id="brand-rail-title">Our Clients, Partners & Press</h2>
+                </div>
+                <div className="logo-rail-window">
+                  <div className="logo-rail-track brand-track">
+                    {[...brandLogos, ...brandLogos].map((logo, index) => {
+                      const image = <img src={logo.src} alt={logo.alt} loading="lazy" onError={(event) => { event.currentTarget.src = logo.fallback }} />
+                      return (
+                        <div className="logo-rail-item" key={`${logo.src}-${index}`}>
+                          {logo.href ? <a href={logo.href} target="_blank" rel="noopener noreferrer">{image}</a> : image}
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
             </section>
