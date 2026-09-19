@@ -2,6 +2,8 @@
 
 This repository contains modern, responsive, high-performance UI/UX redesigns for two distinct web platforms, hosted independently on Cloudflare Workers:
 
+It also contains a standalone vanilla HTML/CSS/JS redesign of TekMindz in `tekmindz-redesign`.
+
 ---
 
 ## 1. Yuva Trip Redesign (`ytrip-redesign`)
@@ -28,6 +30,7 @@ This repository contains modern, responsive, high-performance UI/UX redesigns fo
 Mirror/
 ├── ytrip-redesign/       # Yuva Trip redesign project
 ├── apptology-redesign/   # Apptology redesign project
+├── tekmindz-redesign/    # TekMindz multi-page redesign
 ├── ytrip-site/           # Original YTrip local mirror archive
 └── README.md             # Repository documentation
 ```
@@ -44,6 +47,11 @@ npm run dev
 
 # Apptology Redesign
 cd apptology-redesign
+npm install
+npm run dev
+
+# TekMindz Redesign
+cd tekmindz-redesign
 npm install
 npm run dev
 ```
