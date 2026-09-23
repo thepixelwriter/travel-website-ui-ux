@@ -248,3 +248,22 @@ body { color: #34445a; background: #fff; }
 
 @media (max-width: 900px) { .hero { min-height: 760px; padding-top: 110px; }.hero-art { width: 74%; right: -16%; top: 350px; opacity: .6; }.section { padding: 82px 7vw; } }
 @media (max-width: 520px) { .hero { min-height: 790px; padding-top: 100px; }.hero h1 { font-size: 43px; }.hero-art { width: 118%; right: -35%; top: 425px; opacity: .55; }.hero-copy { font-size: 14px; }.section-heading h2 { font-size: 43px; }.service-card { min-height: 265px; } }
+
+/* Keep large-screen content readable on 2K and ultrawide displays. */
+@media (min-width: 1200px) {
+  .hero { padding-left: max(48px, calc((100% - 1440px) / 2)); padding-right: max(48px, calc((100% - 1440px) / 2)); }
+  .hero-content { max-width: 700px; }
+  .hero-art { width: min(700px, 48vw); right: max(24px, calc((100% - 1440px) / 2)); }
+  .section > .section-heading,
+  .section > .service-grid,
+  .section > .ai-work-grid,
+  .section > .project-grid,
+  .section > .process-list,
+  .section > .technology-grid,
+  .section > .faq-list,
+  .section > .blog-grid { width: min(100%, 1360px); margin-left: auto; margin-right: auto; }
+  .client-strip { padding-left: max(48px, calc((100% - 1360px) / 2)); padding-right: max(48px, calc((100% - 1360px) / 2)); }
+  .about { padding-left: max(48px, calc((100% - 1360px) / 2)); padding-right: max(48px, calc((100% - 1360px) / 2)); }
+  .contact { padding-left: max(48px, calc((100% - 1360px) / 2)); padding-right: max(48px, calc((100% - 1360px) / 2)); }
+  .footer { padding-left: max(48px, calc((100% - 1360px) / 2)); padding-right: max(48px, calc((100% - 1360px) / 2)); }
+}
