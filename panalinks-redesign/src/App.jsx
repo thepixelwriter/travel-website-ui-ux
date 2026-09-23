@@ -6,6 +6,7 @@ import {
   ChevronRight,
   Menu,
   MoveUpRight,
+  Plus,
   Play,
   Sparkles,
   X,
@@ -75,6 +76,7 @@ const blogs = [
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [openSubmenu, setOpenSubmenu] = useState(null)
   const [activeFaq, setActiveFaq] = useState(0)
   const [testimonialIndex, setTestimonialIndex] = useState(0)
 
@@ -83,16 +85,29 @@ function App() {
     setMenuOpen(false)
   }
 
+  const toggleSubmenu = (name) => {
+    setOpenSubmenu(openSubmenu === name ? null : name)
+  }
+
   return (
     <div className="site-shell">
       <div className="announcement"><span>Since 1995</span><span>Delhi · India</span><span>AI automation, web & app development</span><a href="tel:+919899524524">+91 9899 524 524</a></div>
       <header className="header">
         <a className="logo" href="#top" aria-label="Panalinks home"><img src={`${imageBase}/2024/05/Panalink-New-Logo-Upscaled.jpg`} alt="Panalink Infotech Limited" /></a>
         <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'}>
-          <button onClick={() => goTo('services')}>What we do</button>
-          <button onClick={() => goTo('work')}>Our work</button>
-          <button onClick={() => goTo('about')}>About us</button>
-          <button onClick={() => goTo('insights')}>Insights</button>
+          <div className="menu-item">
+            <button className="menu-link" onClick={() => toggleSubmenu('what-we-do')} aria-expanded={openSubmenu === 'what-we-do'}>What we do <span className="menu-plus"><Plus size={28} /></span></button>
+            {openSubmenu === 'what-we-do' && <div className="submenu"><button onClick={() => goTo('services')}>AI automation & agents</button><button onClick={() => goTo('services')}>Websites & ecommerce</button><button onClick={() => goTo('services')}>Mobile applications</button></div>}
+          </div>
+          <div className="menu-item">
+            <button className="menu-link" onClick={() => toggleSubmenu('our-work')} aria-expanded={openSubmenu === 'our-work'}>Our work <span className="menu-plus"><Plus size={28} /></span></button>
+            {openSubmenu === 'our-work' && <div className="submenu"><button onClick={() => goTo('work')}>Selected projects</button><button onClick={() => goTo('work')}>AI products</button><button onClick={() => goTo('work')}>Client stories</button></div>}
+          </div>
+          <button className="menu-link" onClick={() => goTo('about')}>About us</button>
+          <div className="menu-item">
+            <button className="menu-link" onClick={() => toggleSubmenu('insights')} aria-expanded={openSubmenu === 'insights'}>Insights <span className="menu-plus"><Plus size={28} /></span></button>
+            {openSubmenu === 'insights' && <div className="submenu"><button onClick={() => goTo('insights')}>Articles</button><button onClick={() => goTo('insights')}>AI and automation</button><button onClick={() => goTo('insights')}>Company news</button></div>}
+          </div>
           <button className="mobile-contact" onClick={() => goTo('contact')}>Start a project <ArrowUpRight size={16} /></button>
         </nav>
         <button className="header-cta" onClick={() => goTo('contact')}>Start a project <ArrowUpRight size={16} /></button>
