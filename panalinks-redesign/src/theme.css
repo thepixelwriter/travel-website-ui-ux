@@ -285,6 +285,28 @@ body { color: #34445a; background: #fff; }
   overflow-y: auto;
   box-shadow: none;
 }
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 18;
+  border: 0;
+  background: rgba(16, 42, 67, .55);
+}
+.menu-close {
+  position: absolute;
+  top: 24px;
+  right: max(5vw, 24px);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #102a43;
+}
+.menu-close:hover { color: var(--accent); }
 .main-nav.is-open .menu-item { border-bottom: 1px solid #e2e9f2; }
 .main-nav.is-open .menu-link {
   display: flex;

@@ -94,7 +94,9 @@ function App() {
       <div className="announcement"><span>Since 1995</span><span>Delhi · India</span><span>AI automation, web & app development</span><a href="tel:+919899524524">+91 9899 524 524</a></div>
       <header className="header">
         <a className="logo" href="#top" aria-label="Panalinks home"><img src={`${imageBase}/2024/05/Panalink-New-Logo-Upscaled.jpg`} alt="Panalink Infotech Limited" /></a>
+        {menuOpen && <button className="menu-backdrop" onClick={() => setMenuOpen(false)} aria-label="Close navigation" />}
         <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'}>
+          {menuOpen && <button className="menu-close" onClick={() => setMenuOpen(false)} aria-label="Close navigation"><X size={30} /></button>}
           <div className="menu-item">
             <button className="menu-link" onClick={() => toggleSubmenu('what-we-do')} aria-expanded={openSubmenu === 'what-we-do'}>What we do <span className="menu-plus"><Plus size={28} /></span></button>
             {openSubmenu === 'what-we-do' && <div className="submenu"><button onClick={() => goTo('services')}>AI automation & agents</button><button onClick={() => goTo('services')}>Websites & ecommerce</button><button onClick={() => goTo('services')}>Mobile applications</button></div>}
